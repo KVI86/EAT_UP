@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_all"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/Recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_corner"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#00008b"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Recipe_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/main_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true">
+                <TextView
+                    android:text="Ингредиенты"
+                    android:id="@+id/title_ingridients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/text_corner"
+                    android:textColor="#00008b"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:text=""
+                    android:id="@+id/ingridients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_corner"
+                    android:textColor="#00008b"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:typeface="normal"
+                    android:padding="15dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step1"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step2"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step3"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step4"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step5"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="18dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/step6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step6"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step7"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step8"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008B"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step8"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/step9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step9"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step10"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step10"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/step11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step11"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step12"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step12"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step13"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step13"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step14"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step14"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step15"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step15"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="18dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step16"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step16"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step17"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step17"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step18"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008B"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step18"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/step19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step19"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step19"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/step20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/t_step20"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="13dp"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/i_step20"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                     />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"></com.github.mikephil.charting.charts.PieChart>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/coast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="#00008b"
+                    android:textSize="20dp"
+                    android:typeface="normal">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

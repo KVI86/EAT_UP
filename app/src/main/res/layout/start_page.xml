@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_all"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="293dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/text_corner"
+        android:color="#0000008B"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Средства на месяц"
+        android:textAllCaps="false"
+        android:textColor="#00008b"
+        android:textSize="25dp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_value"
+        android:layout_width="85dp"
+        android:layout_height="59dp"
+        android:background="@drawable/text_corner"
+        android:fontFamily="@font/montserrat"
+        android:text="OK"
+        android:textStyle="bold"
+        android:textColor="#00008b"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="293dp"
+        android:layout_height="65dp"
+        android:background="@drawable/text_corner"
+        android:hint="Введите сумму"
+        android:inputType="numberSigned"
+        android:padding="20dp"
+        android:textColor="#00008b"
+        android:textStyle="bold"
+        android:textColorHint="#686868"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.059" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

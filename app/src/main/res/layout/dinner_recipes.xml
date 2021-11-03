@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_all"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_corner"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Ужины"
+        android:textStyle="bold"
+        android:textColor="#00008b"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/d1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/d_icon_1" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Замороженные пельмени на сковороде жареные"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/d_icon_2" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Картошка с овощами в духовке"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/d_icon_3" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Кольца кальмара в кляре"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/d_icon_4" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Курица с сыром в духовке"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/d_icon_5" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Макароны с колбасой"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe6"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/d_icon_6" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Мясо по французски из свинины с помидорами"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe7"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/d_icon_7" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Овощное рагу с курицей, картошкой и капустой"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe8"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/d_icon_8" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Помидоры на сковороде с чесноком жареные"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe9"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/d_icon_9" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Салат из пекинской капусты и огурцов"
+                    android:textColor="#00008b"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/d10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/d_recipe10"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/d_icon_10" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_corner"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Салат с фасолью, кириешками и колбасой"
+                    android:textColor="#00008b"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:typeface="normal"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
